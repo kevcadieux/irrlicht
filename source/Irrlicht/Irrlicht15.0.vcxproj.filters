@@ -1342,6 +1342,7 @@
     <ClInclude Include="..\..\include\SOverrideMaterial.h">
       <Filter>include\video</Filter>
     </ClInclude>
+    <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\changes.txt">
@@ -2280,6 +2281,8 @@
     <ClCompile Include="CWGLManager.cpp">
       <Filter>Irrlicht\video\OpenGL Context</Filter>
     </ClCompile>
+    <ClCompile Include="pch-cpp.cpp" />
+    <ClCompile Include="pch-c.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Irrlicht.rc" />

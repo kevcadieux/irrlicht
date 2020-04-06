@@ -68,80 +68,80 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SDL-Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SDL-Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static lib - Release - Fast FPU|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static lib - Release - Fast FPU|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static lib - Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static lib - Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static lib - Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static lib - Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - Fast FPU|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - Fast FPU|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -442,7 +442,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\include;zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_WINDOWS;_USRDLL;IRRLICHT_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_WINDOWS;_USRDLL;IRRLICHT_EXPORTS;_CRT_SECURE_NO_DEPRECATE;HAVE_BOOLEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -454,6 +454,10 @@
       <CompileAs>Default</CompileAs>
       <DisableLanguageExtensions>false</DisableLanguageExtensions>
       <DisableSpecificWarnings>4577</DisableSpecificWarnings>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch-cpp.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -1126,6 +1130,7 @@
     <ClInclude Include="CZBuffer.h" />
     <ClInclude Include="ITriangleRenderer.h" />
     <ClInclude Include="IZBuffer.h" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="S2DVertex.h" />
     <ClInclude Include="SB3DStructs.h" />
@@ -1435,81 +1440,232 @@
     <ClCompile Include="COSOperator.cpp" />
     <ClCompile Include="Irrlicht.cpp" />
     <ClCompile Include="os.cpp" />
+    <ClCompile Include="pch-c.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="pch-cpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="utf8.cpp" />
     <ClCompile Include="CProfiler.cpp" />
     <ClCompile Include="leakHunter.cpp" />
-    <ClCompile Include="lzma\LzmaDec.c" />
-    <ClCompile Include="zlib\adler32.c" />
-    <ClCompile Include="zlib\compress.c" />
-    <ClCompile Include="zlib\crc32.c" />
-    <ClCompile Include="zlib\deflate.c" />
-    <ClCompile Include="zlib\inffast.c" />
-    <ClCompile Include="zlib\inflate.c" />
-    <ClCompile Include="zlib\inftrees.c" />
-    <ClCompile Include="zlib\trees.c" />
-    <ClCompile Include="zlib\uncompr.c" />
-    <ClCompile Include="zlib\zutil.c" />
-    <ClCompile Include="jpeglib\jaricom.c" />
-    <ClCompile Include="jpeglib\jcapimin.c" />
-    <ClCompile Include="jpeglib\jcapistd.c" />
-    <ClCompile Include="jpeglib\jcarith.c" />
-    <ClCompile Include="jpeglib\jccoefct.c" />
-    <ClCompile Include="jpeglib\jccolor.c" />
-    <ClCompile Include="jpeglib\jcdctmgr.c" />
-    <ClCompile Include="jpeglib\jchuff.c" />
-    <ClCompile Include="jpeglib\jcinit.c" />
-    <ClCompile Include="jpeglib\jcmainct.c" />
-    <ClCompile Include="jpeglib\jcmarker.c" />
-    <ClCompile Include="jpeglib\jcmaster.c" />
-    <ClCompile Include="jpeglib\jcomapi.c" />
-    <ClCompile Include="jpeglib\jcparam.c" />
-    <ClCompile Include="jpeglib\jcprepct.c" />
-    <ClCompile Include="jpeglib\jcsample.c" />
-    <ClCompile Include="jpeglib\jctrans.c" />
-    <ClCompile Include="jpeglib\jdapimin.c" />
-    <ClCompile Include="jpeglib\jdapistd.c" />
-    <ClCompile Include="jpeglib\jdarith.c" />
-    <ClCompile Include="jpeglib\jdatadst.c" />
-    <ClCompile Include="jpeglib\jdatasrc.c" />
-    <ClCompile Include="jpeglib\jdcoefct.c" />
-    <ClCompile Include="jpeglib\jdcolor.c" />
-    <ClCompile Include="jpeglib\jddctmgr.c" />
-    <ClCompile Include="jpeglib\jdhuff.c" />
-    <ClCompile Include="jpeglib\jdinput.c" />
-    <ClCompile Include="jpeglib\jdmainct.c" />
-    <ClCompile Include="jpeglib\jdmarker.c" />
-    <ClCompile Include="jpeglib\jdmaster.c" />
-    <ClCompile Include="jpeglib\jdmerge.c" />
-    <ClCompile Include="jpeglib\jdpostct.c" />
-    <ClCompile Include="jpeglib\jdsample.c" />
-    <ClCompile Include="jpeglib\jdtrans.c" />
-    <ClCompile Include="jpeglib\jerror.c" />
-    <ClCompile Include="jpeglib\jfdctflt.c" />
-    <ClCompile Include="jpeglib\jfdctfst.c" />
-    <ClCompile Include="jpeglib\jfdctint.c" />
-    <ClCompile Include="jpeglib\jidctflt.c" />
-    <ClCompile Include="jpeglib\jidctfst.c" />
-    <ClCompile Include="jpeglib\jidctint.c" />
-    <ClCompile Include="jpeglib\jmemmgr.c" />
-    <ClCompile Include="jpeglib\jmemnobs.c" />
-    <ClCompile Include="jpeglib\jquant1.c" />
-    <ClCompile Include="jpeglib\jquant2.c" />
-    <ClCompile Include="jpeglib\jutils.c" />
-    <ClCompile Include="libpng\png.c" />
-    <ClCompile Include="libpng\pngerror.c" />
-    <ClCompile Include="libpng\pngget.c" />
-    <ClCompile Include="libpng\pngmem.c" />
-    <ClCompile Include="libpng\pngpread.c" />
-    <ClCompile Include="libpng\pngread.c" />
-    <ClCompile Include="libpng\pngrio.c" />
-    <ClCompile Include="libpng\pngrtran.c" />
-    <ClCompile Include="libpng\pngrutil.c" />
-    <ClCompile Include="libpng\pngset.c" />
-    <ClCompile Include="libpng\pngtrans.c" />
-    <ClCompile Include="libpng\pngwio.c" />
-    <ClCompile Include="libpng\pngwrite.c" />
-    <ClCompile Include="libpng\pngwtran.c" />
-    <ClCompile Include="libpng\pngwutil.c" />
+    <ClCompile Include="lzma\LzmaDec.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jaricom.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcapimin.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcapistd.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcarith.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jccoefct.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jccolor.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcdctmgr.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jchuff.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcinit.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcmainct.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcmarker.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcmaster.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcomapi.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcparam.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcprepct.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jcsample.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jctrans.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdapimin.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdapistd.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdarith.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdatadst.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdatasrc.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdcoefct.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdcolor.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jddctmgr.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdhuff.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdinput.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdmainct.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdmarker.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdmaster.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdmerge.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdpostct.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdsample.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jdtrans.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jerror.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jfdctflt.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jfdctfst.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jfdctint.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jidctflt.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jidctfst.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jidctint.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jmemmgr.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jmemnobs.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jquant1.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jquant2.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="jpeglib\jutils.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\png.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngerror.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngget.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngmem.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngpread.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngread.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrio.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrtran.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrutil.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngset.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngtrans.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwio.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwrite.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwtran.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwutil.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
     <ClCompile Include="aesGladman\aescrypt.cpp" />
     <ClCompile Include="aesGladman\aeskey.cpp" />
     <ClCompile Include="aesGladman\aestab.cpp" />
@@ -1519,13 +1675,27 @@
     <ClCompile Include="aesGladman\pwd2key.cpp" />
     <ClCompile Include="aesGladman\sha1.cpp" />
     <ClCompile Include="aesGladman\sha2.cpp" />
-    <ClCompile Include="bzip2\blocksort.c" />
-    <ClCompile Include="bzip2\bzcompress.c" />
-    <ClCompile Include="bzip2\bzlib.c" />
-    <ClCompile Include="bzip2\crctable.c" />
-    <ClCompile Include="bzip2\decompress.c" />
-    <ClCompile Include="bzip2\huffman.c" />
-    <ClCompile Include="bzip2\randtable.c" />
+    <ClCompile Include="bzip2\blocksort.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="bzip2\bzcompress.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="bzip2\bzlib.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="bzip2\crctable.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="bzip2\decompress.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="bzip2\huffman.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="bzip2\randtable.c">
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)pch-c.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
     <ClCompile Include="CIrrDeviceConsole.cpp" />
     <ClCompile Include="CIrrDeviceFB.cpp" />
     <ClCompile Include="CIrrDeviceLinux.cpp" />

@@ -10,6 +10,8 @@
 #include "irrMap.h"
 #include "triangle3d.h"
 
+#undef far
+
 namespace irr
 {
 namespace scene

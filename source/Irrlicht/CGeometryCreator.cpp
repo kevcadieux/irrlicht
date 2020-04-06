@@ -10,6 +10,8 @@
 #include "IVideoDriver.h"
 #include "os.h"
 
+#undef far
+
 namespace irr
 {
 namespace scene
